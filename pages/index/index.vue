@@ -9,6 +9,7 @@ console.log("videoList", videoList);
 </script>
 
 <template>
+    <div>
     <!-- <h2>首页</h2>
     <van-button type="primary">主要按钮</van-button>
     <van-button type="success">主要按钮</van-button>
@@ -24,11 +25,21 @@ console.log("videoList", videoList);
     </van-tabs>
 
     <!-- 视频列表 -->
-    <!-- <div class="video-list">
-        <Nuxtlink class="v-card" v-for="item in channelList" :key="item.id" :to="/video/${item.id}">
-            1
+    <div class="video-list">
+        <Nuxtlink class="v-card" v-for="item in videoList" :key="item.id" :to="/video/${item.id}">
+            <div class="card">
+                <div class="card-img">
+                    <img class="pic" src="@/assets/images/loading/png" alt=""/>
+                </div>
+                <div class="count">
+                    <span>
+                        
+                    </span>
+                </div>
+            </div>
         </Nuxtlink>
-    </div> -->
+    </div>
+</div>
 </template>
 
 <style scoped>
